@@ -19,7 +19,7 @@ btn.addEventListener('click',()=>{
     }
 
     let place=document.getElementById('location').value;
-    fetch(`http://api.weatherapi.com/v1/current.json?key=34028ea163234432885100605251606&q=${place}&aqi=yes`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=34028ea163234432885100605251606&q=${place}&aqi=yes`)
     .then(response=>response.json())
     .then(data=>fetchData(data))
 })
